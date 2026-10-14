@@ -7,3 +7,5 @@ print("4 * 3 =", proizwedenie(4, 3))
 print("10 / 2 =", delenie(10, 2))
 print("10 / 0 =", delenie(10, 0))
 print()
+
+print("Здесь был person2")
