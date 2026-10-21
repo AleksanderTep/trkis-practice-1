@@ -32,4 +32,4 @@ jobs:
     - name: Generate documentation
       run: |
         pip install pdoc
-        pdoc person1/ -o docs/
+        pdoc person1/ -o docs/ --config "sys.path.append('person1')"
