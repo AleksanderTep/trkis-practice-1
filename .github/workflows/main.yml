@@ -26,10 +26,11 @@ jobs:
 
     - name: Run tests
       run: |
-        pytest person1/ || echo "Тесты не найдены, но пайплайн прошел"
+        pip install pytest
+        pytest person1/
 
         
     - name: Generate documentation
       run: |
         pip install pdoc
-        pdoc person1/ -o docs/ --config "sys.path.append('person1')"
+        pdoc person1/calculator.py person1/main.py -o docs/
