@@ -27,3 +27,9 @@ jobs:
     - name: Run tests
       run: |
         pytest person1/ || echo "Тесты не найдены, но пайплайн прошел"
+
+        
+    - name: Generate documentation
+      run: |
+        pip install pdoc
+        pdoc person1/ -o docs/
