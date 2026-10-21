@@ -24,7 +24,7 @@ class TestCalculator(unittest.TestCase):
 
     # 5. Проверка деления на ноль
     def test_delenie_zero(self):
-        self.assertEqual(delenie(10, 0), "Ошибка: деление на ноль")
+        self.assertEqual(delenie(10, 0), "ошибка, я не уметь делить на нуль")
 
 if __name__ == '__main__':
     unittest.main()
